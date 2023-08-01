@@ -20,7 +20,7 @@
               ao passo em que são processadas e remove elas após cada processamento completo */
 
              string body = args.Message.Body.ToString();
-             Console.WriteLine($"Received: {body}");
+             Console.WriteLine($"Recebido: {body}");
              await args.CompleteMessageAsync(args.Message);
          }
          static Task ErrorHandler(ProcessErrorEventArgs args)
